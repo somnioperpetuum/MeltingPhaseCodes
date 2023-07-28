@@ -1,0 +1,80 @@
+                                                                          
+                                                         88               
+                                                         ""               
+                                                                          
+,adPPYba,   ,adPPYba,   88,dPYba,,adPYba,   8b,dPPYba,   88   ,adPPYba,   
+I8[    ""  a8"     "8a  88P'   "88"    "8a  88P'   `"8a  88  a8"     "8a  
+ `"Y8ba,   8b       d8  88      88      88  88       88  88  8b       d8  
+aa    ]8I  "8a,   ,a8"  88      88      88  88       88  88  "8a,   ,a8"  
+`"YbbdP"'   `"YbbdP"'   88      88      88  88       88  88   `"YbbdP"'   
+                                                                                                                     
+                                                                ,d                                                   
+                                                                88                                                   
+8b,dPPYba,    ,adPPYba,  8b,dPPYba,  8b,dPPYba,    ,adPPYba,  MM88MMM  88       88  88       88  88,dPYba,,adPYba,   
+88P'    "8a  a8P_____88  88P'   "Y8  88P'    "8a  a8P_____88    88     88       88  88       88  88P'   "88"    "8a  
+88       d8  8PP"""""""  88          88       d8  8PP"""""""    88     88       88  88       88  88      88      88  
+88b,   ,a8"  "8b,   ,aa  88          88b,   ,a8"  "8b,   ,aa    88,    "8a,   ,a88  "8a,   ,a88  88      88      88  
+88`YbbdP"'    `"Ybbd8"'  88          88`YbbdP"'    `"Ybbd8"'    "Y888   `"YbbdP'Y8   `"YbbdP'Y8  88      88      88  
+88                                   88                                                                              
+88                                   88                                                                              
+
+----$omnio
+   ------Perpetuum
+      ------036 111 109 110 105 111 032 080 101 114 112 101 116 117 117 109
+       ------1010111 1100101 100000 1100001 1101100 1101100 100000 1100111 
+       ------1101111 1101110 1101110 1100001 100000 1100100 1101001 1100101 
+       ------100000 1101111 1101110 1100101 100000 1100100 1100001 1111001
+      👁️
+
+setcps(60/60/4)
+
+
+d1 
+   $ fast 2
+   $ n "0 <0 5> 0 <0 4 {2 4 5 2} 3>"
+   # s "BD" 
+   -- # squiz (range 4 12 sine)
+   # room 1 
+   # gain 1
+
+d2 
+  $ fast 4
+  $ n "0 <0 5> 0 <0 4 {2 4 5 2} 3>"
+   # s "BD" 
+   # squiz (range 4 32 sine)
+   # room (range 0 1 sine) 
+   # gain 0.9
+   # crush (range 4 16 saw)
+   -- # size 1
+
+
+
+d3 
+   $ n "{~ 1}!16"
+   # s "SN"
+   # room 0.8
+   # squiz (range 8 10 sine)
+   # gain 0.7
+
+d4 
+   $ loopAt 0.5
+   $ note "1"
+   # s "breaks165"
+   # squiz (fast 1 $ range 1 8 saw)
+
+d5 
+   $ fast 4
+   $ n "{1 2 3 4}.{5  6  7  8}."
+   # s "speakspell"
+   # room (fast 4 $ range 0.1 1 sine)
+   # gain 0.6
+
+d6 
+   $ fast 4
+   $ n "4"
+   # s "Deep_Forest"
+   # gain 0.6
+   # room ( fast 4 $ range 0 1 tri)
+
+
+d6 silence
